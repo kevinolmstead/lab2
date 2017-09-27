@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+var done = 0;
+function ChangeColor()
+{
+	if(done == 0)
+	{
+		document.body.bgColor="blue"
+		done = 1;
+	}
+	else if(done == 1)
+	{
+		document.body.bgColor="red"
+		done = 2;
+	}
+	else if(done == 2)
+	{
+		document.body.bgColor="white"
+		done = 0;
+	}
+}
+</script>
+<body onclick="ChangeColor()">
+Click for 'murica.</body>
+</head>
+</html>
+
